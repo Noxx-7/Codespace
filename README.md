@@ -8,7 +8,7 @@
 
 ## Stack
 
-- [JavaScript](https://www.javascript.com/) - dynamically updating content, control multimedia, animate images
+- [JavaScript](https://www.javascript.com/) - Dynamically updating content, control multimedia, animate images
 - [Express.js](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 - [Node.js](https://nodejs.org/en/docs/) - Server-side programming, and primarily deployed for non-blocking, event-driven servers
 - [MongoDB](https://www.mongodb.com/) - Build highly available and scalable internet applications
