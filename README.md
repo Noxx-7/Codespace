@@ -14,16 +14,4 @@
 - [MongoDB](https://www.mongodb.com/) - Build highly available and scalable internet applications
 
 
-## Project structure
 
-```
-$PROJECT_ROOT
-│   # Page files
-├── pages
-│   # React component files
-├── components
-│   # Non-react modules
-├── lib
-│   # Static files for images file
-└── public
-```
