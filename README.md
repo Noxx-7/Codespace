@@ -17,11 +17,11 @@
 - open terminal in your code editor 
 - cd backend
 - while in backend write ( npm install )
-- cd .. (Get out from the backend folder
+- cd .. ( Get out from the backend folder )
 - Write ( npm install )
 - When both backend and frontend have there node_modules
 - Write ( npm run both ) It will run both the backend and the frontend at the same time.
-- if you have any error then install this (concurrently)
+- if you have any error then install this ( concurrently )
 
 ## Stack
 
