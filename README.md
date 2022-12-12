@@ -11,6 +11,8 @@
 - Its a backend with frontend project where the data is stored in a temp folder via STATES(Node.js) with the help of api's.
 - Its has a code editor which supports C, JAVA, C++, PYTHON.
 - The code editor also give the suggestion while coding with those supported language.
+- It save the data in a temp folder in a javascript form with the time and date.
+- The Question are taken from the json file direclty.
 
 ## Run this project in your system
 
