@@ -1,85 +1,19 @@
-const express = require("express");
-const path = require("path");
+import { Route, Routes } from "react-router-dom";
 
-require ("./db/conn");
-const User = require("./models/usermessage");
-
-
-
-const hbs = require("hbs");
-
-const app = express();
-
-const port = process.env.PORT || 3000;
+import Solve  from "./components/Solve";
+import Home from "./components/Home";
+// import Solve from './components/1';
 
 
+function App() {
+return (
+  <div >
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Solve" element={<Solve />} />
+      </Routes>
+    </div>
+);
+}
 
-
-//setting the path
-
-
-const staticpath = path.join(__dirname, "../public");
-const templatepath = path.join(__dirname, "../templates/views");
-const partialpath = path.join(__dirname, "../templates/partials");
-
-
-
-
-
-
-
-//middleware
-app.use('/css', express.static(path.join(__dirname, "../node_modules/bootstrap/dist/css")));
-app.use('/js', express.static(path.join(__dirname, "../node_modules/bootstrap/dist/js")));
-app.use('/jq', express.static(path.join(__dirname, "../node_modules/jquery/dist")));
-
-
-app.use(express.urlencoded({extended:false}));
-app.set("view engine", "hbs");
-
-
-
-app.use(express.static(staticpath));
-app.set("views", templatepath);
-hbs.registerPartials(partialpath);
-
-
-
-
-
-
-//routing
-
-app.get("/", (req, res) => {
-    res.render("index");
-
-})
-app.get("/palidrome", (req, res) => {
-    res.render("palidrome");
-
-})
-
-app.get("/validate", (req, res) => {
-    res.render("validate");
-
-})
-
-app.post("/", async(req, res) =>{
-    try{
-
-        const userData = new User (req.body);
-        await userData.save();
-        res.status(201).render("index");
-
-    }catch(error){
-        res.status(500).send(error);
-    }
-
-})
-
-
-//server created
-
-app.listen(port, () => {
-    console.log(`server is running at port no ${port}`);
-})
+export default App;
