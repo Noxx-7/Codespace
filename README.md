@@ -7,7 +7,7 @@
 ![4](https://user-images.githubusercontent.com/83027100/207076759-0d96eb07-07b6-412b-b64b-1a7af6d2015d.jpg)
 
 ## About this Project
-
+- Made up of React.js Framework with Node.js for the backend. 
 - Its a backend with frontend project where the data is stored in a temp folder via STATES(Node.js) with the help of api's.
 - Its has a code editor which supports C, JAVA, C++, PYTHON.
 - The code editor also give the suggestion while coding with those supported language.
